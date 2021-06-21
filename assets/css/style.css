@@ -1,0 +1,61 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6em;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 16px 0;
+}
+/* styling for the conatiner inside the header */
+header .container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* navigation bar styling */
+nav {
+  display: grid;
+  grid-gap: 26px;
+  grid-template-columns: repeat(3, auto);
+}
+
+/* styling for the links */
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section.banner {
+  position: relative;
+  min-height: 100vh;
+  background-image: url("../images/header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+section.banner::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background-color: #12002f;
+  opacity: 0.8;
+}
+
+banner .container {
+  width: 80%;
+  z-index: 1;
+}
